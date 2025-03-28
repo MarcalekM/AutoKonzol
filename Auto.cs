@@ -26,7 +26,7 @@ namespace AutoKonzol
 
         public override string ToString()
         {
-            return $"\tGyártó - modell: {Gyarto.GyartoNev} - {Modell}\n\tFogyasztás: {FogyasztasVarosban}/100km\n\tKilométer óra állása: {KilometeroraAllas} km\n\tVáltó típusa: {Valto.ValtoNev}\n\tÁra (CAD): {Ar}";
+            return $"\tGyártó - modell: {Gyarto.GyartoNev} - {Modell}\n\tFogyasztás: {(FogyasztasVarosban + FogyasztasAutopalyan) / 2}/100km\n\tKilométer óra állása: {KilometeroraAllas} km\n\tVáltó típusa: {Valto.ValtoNev}\n\tÁra (CAD): {Ar}";
         }
         static public List<Auto> LoadFromCsv(string file)
         {
