@@ -7,7 +7,7 @@ Console.WriteLine($"6. feladat - 8 hengeres, Rolls-Royce sedanok száma az adott
 
 var f7 = autok.OrderByDescending(x => x.Ar).First();
 Console.WriteLine($"7. feladat - A legdrágább autó");
-Console.WriteLine(autok.IndexOf(f7) + ". autó:");
+Console.WriteLine(autok.IndexOf(f7)+1 + ". autó:");
 Console.WriteLine(f7.ToString());
 Console.WriteLine($"Ára (HUF): {Math.Round(f7.Ar * 248.02)}");
 
